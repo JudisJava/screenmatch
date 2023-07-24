@@ -5,6 +5,8 @@ public class Principal {
         meuFilme.anoDeLancamento = 1970;
         meuFilme.duracaoEmMinutos = 180;
 
-        System.out.println(meuFilme.nome);
+        meuFilme.exibeFichaTecnica();
+        meuFilme.avalia(8);
+
     }
 }
