@@ -18,9 +18,10 @@ public class PrincipalComListas {
         listaDeFilmes.add(meuFilme);
         listaDeFilmes.add(lost);
         for (Titulo item: listaDeFilmes) {
-            System.out.println(item);
-            Filme filme = (Filme) item;
-            System.out.println("Classificação" + filme.getClassificacao());
+            System.out.println(item.getNome());
+            if (item instanceof Filme filme) {
+            System.out.println("Classificação " + filme.getClassificacao());
+            }
         }
 
     }
